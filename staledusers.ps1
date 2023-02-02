@@ -1,5 +1,6 @@
 $tenantID="YOUR TENANT ID"
 $contentType = "application/json"
+$exportpath = "'.\User_Signin_Activity.csv'"
 
 $Body = @{    
     Grant_Type    = "client_credentials"
@@ -47,4 +48,4 @@ while ($SignInData.'@odata.nextLink' -ne $null){
 }
 
 $outList.Count
-$outList | Export-Csv -Path '.\User_Signin_Activity.csv' -Encoding UTF8 -NoTypeInformation
+$outList | Export-Csv -Path $exportpath -Encoding UTF8 -NoTypeInformation
