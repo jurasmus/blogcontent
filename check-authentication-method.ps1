@@ -7,7 +7,7 @@ Connect-MgGraph -Scopes "User.ReadWrite.All","UserAuthenticationMethod.ReadWrite
 $allusers = Get-MgBetaUser -All
 
 # Add your webhook URL here. You generate it from your dedicated notification channel in Teams.
-$webhookUrl = "https://idefixw365.webhook.office.com/webhookb2/47837571-9f59-4a37-9649-09712a7dd893@dd1a5a82-b9cc-4855-96d0-98e8dd7e7055/IncomingWebhook/1adc45a3784b4e0d94f0be085a77bbdd/072338a1-0159-43cd-819d-3e6cef0237de"
+$webhookUrl = "Insert Webhook url here"
 
 # Add your notification title here
 $teamschanneltitle = "Checking for missing phone authentication methods"
