@@ -1,6 +1,7 @@
 <#
     .SYNOPSIS
-    export-cap.ps1
+    .\export-cap.ps1
+    .\export-cap.ps1 -exportPath C:\CABackup-Idefix\
 
     .DESCRIPTION
     Export Conditional Access policies to JSON files for backup purposes.
